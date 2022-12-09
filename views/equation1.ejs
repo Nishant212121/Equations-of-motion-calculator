@@ -1,0 +1,30 @@
+<%- include("partials/header") %> 
+<h1>Equation Calculator</h1>
+<h1>Using formula <%= formula %></h1>
+<ul>
+    <li>v = Final Velocity</li>
+    <li>u = Initial Velocity</li>
+    <li>a = Acceleration</li>
+    <li>t = Time</li>
+</ul>
+<form action="/equation1" method="post">
+    <div class="mb-3">
+        <label class="form-label">Final Velocity (m/s)</label>
+        <input type="number" name="velocity" class="form-control" placeholder="Enter Inital Velocity (m/s)" step=".01">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Inital Velocity (m/s)</label>
+        <input type="number" name="initialV" class="form-control" placeholder="Enter Inital Velocity (m/s)" step=".01">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Acceleration (m/s²)</label>
+        <input type="number" class="form-control" placeholder="Enter acceleration (m/s²)" name="accel" step=".01">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Time (sec)</label>
+        <input type="number" class="form-control" name="time" placeholder="Enter Time (sec)" step=".01">
+    </div>
+    <button class="btn btn-dark" type="submit" onclick="clearArray()">Calculate</button>
+</form>
+<h1><%= result %> </h1>
+<%- include("partials/footer") %> 

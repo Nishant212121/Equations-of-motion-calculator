@@ -1,0 +1,18 @@
+.btn{
+    margin: 10px 10px 10px 10px;
+}
+
+.card-text{
+    text-align: center !important;
+    margin-top: 250px;
+    margin-bottom: 10px !important;
+}
+
+li{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+h1{
+    font-family:'Poppins', sans-serif;;
+    font-weight: 700;
+}
